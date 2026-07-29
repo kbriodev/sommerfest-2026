@@ -1,1 +1,345 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sommerfest</title></head><body><h2>Ersetze diese Datei mit der vollständigen Version.</h2><p>Diese Platzhalterdatei dient nur zum Austausch.</p></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sommerfest 2026 – Bregwerk</title>
+<style>
+:root {
+  --bg:#f6f1e7;
+  --card:#ffffff;
+  --text:#1f1f1f;
+  --muted:#6a6258;
+  --line:#d8c9b2;
+  --accent:#8a6a3f;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(180deg,#f7f2e8 0%,#efe5d5 100%);
+  color:var(--text);
+  min-height:100vh;
+}
+.wrapper {
+  max-width:760px;
+  margin:0 auto;
+  padding:24px 16px 40px;
+}
+.card {
+  background:rgba(255,255,255,.96);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px 22px;
+  box-shadow:0 10px 30px rgba(65,48,27,.10);
+}
+#menu h1 {
+  margin:0 0 8px;
+  font-size:clamp(30px,7vw,48px);
+  text-align:center;
+}
+#menu p {
+  text-align:center;
+  color:var(--muted);
+  margin:0 0 22px;
+}
+.lang-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.lang-btn,.back {
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:14px;
+  padding:14px 12px;
+  font-size:17px;
+  cursor:pointer;
+}
+.lang-btn:hover,.back:hover { background:#f7f1e7; }
+.lang-section { display:none; }
+.lang-title {
+  color:var(--muted);
+  text-align:center;
+  font-weight:700;
+  margin-bottom:8px;
+}
+h1 {
+  text-align:center;
+  margin:0;
+  font-size:clamp(30px,7vw,46px);
+}
+h2 {
+  text-align:center;
+  font-size:clamp(18px,4.6vw,25px);
+  margin:10px 0 24px;
+  color:var(--accent);
+}
+.info {
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+}
+.info p {
+  margin:10px 0;
+  line-height:1.45;
+}
+.register {
+  font-weight:700;
+  background:#f5ead9;
+  padding:12px;
+  border-radius:12px;
+}
+h3 {
+  text-align:center;
+  font-size:23px;
+  margin:24px 0 12px;
+}
+.optional {
+  font-weight:700;
+  font-style:italic;
+}
+.back {
+  width:100%;
+  margin-top:22px;
+}
+@media (max-width:520px) {
+  .lang-grid { grid-template-columns:1fr; }
+  .card { padding:22px 16px; border-radius:18px; }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <section id="menu" class="card">
+    <h1>🌍 Sprache auswählen</h1>
+    <p>Please choose your language</p>
+    <div class="lang-grid">
+      <button class="lang-btn" onclick="showLang('de')">🇩🇪 Deutsch</button>
+<button class="lang-btn" onclick="showLang('en')">🇬🇧 English</button>
+<button class="lang-btn" onclick="showLang('pl')">🇵🇱 Polski</button>
+<button class="lang-btn" onclick="showLang('ro')">🇷🇴 Română</button>
+<button class="lang-btn" onclick="showLang('hu')">🇭🇺 Magyar</button>
+<button class="lang-btn" onclick="showLang('es')">🇪🇸 Español</button>
+<button class="lang-btn" onclick="showLang('it')">🇮🇹 Italiano</button>
+<button class="lang-btn" onclick="showLang('mk')">🇲🇰 Македонски</button>
+<button class="lang-btn" onclick="showLang('kk')">🇰🇿 Қазақша</button>
+<button class="lang-btn" onclick="showLang('sr')">🇷🇸 Srpski</button>
+<button class="lang-btn" onclick="showLang('me')">🇲🇪 Crnogorski</button>
+    </div>
+  </section>
+  
+<section id="de" class="card lang-section">
+  <div class="lang-title">🇩🇪 Deutsch</div>
+  <h1>Sommerfest 2026</h1>
+  <h2>Gemeinsam. Bunt. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Samstag, 19. September 2026</p>
+    <p>🕒 Beginn: 15:00 Uhr</p>
+    <p>👨‍👩‍👧‍👦 Kollegen mit Familie</p>
+    <p>🍽️ Für das leibliche Wohl ist gesorgt.</p>
+    <p>📍 Treffpunkt: Bregwerkstr. 5A, Hof vor dem Personalbüro, gegenüber dem Mitarbeiterhaus.</p>
+    <p class="register">📝 Bitte tragt euch bis spätestens 21.08.2026 in die Anmeldeliste ein.</p>
+  </div>
+  <h3>Essen verbindet Kulturen.</h3>
+  <p>Wer möchte, bringt eine Spezialität, einen Salat oder ein Dessert aus seiner Heimat mit.</p>
+  <p class="optional">Kein Muss – Eure Teilnahme ist das schönste Geschenk.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="en" class="card lang-section">
+  <div class="lang-title">🇬🇧 English</div>
+  <h1>Summer Party 2026</h1>
+  <h2>Together. Colorful. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Saturday, 19 September 2026</p>
+    <p>🕒 Starts at 3:00 p.m.</p>
+    <p>👨‍👩‍👧‍👦 Colleagues and their families are welcome.</p>
+    <p>🍽️ Food and drinks will be provided.</p>
+    <p>📍 Meeting point: Bregwerkstr. 5A, courtyard in front of the HR office, opposite the employee building.</p>
+    <p class="register">📝 Please add your name to the registration list by 21 August 2026 at the latest.</p>
+  </div>
+  <h3>Food brings cultures together.</h3>
+  <p>If you would like, you are welcome to bring a speciality, salad or dessert from your home country.</p>
+  <p class="optional">No obligation – your presence is the best gift.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="pl" class="card lang-section">
+  <div class="lang-title">🇵🇱 Polski</div>
+  <h1>Letnie spotkanie 2026</h1>
+  <h2>Razem. Kolorowo. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Sobota, 19 września 2026</p>
+    <p>🕒 Początek: godz. 15:00</p>
+    <p>👨‍👩‍👧‍👦 Zapraszamy pracowników wraz z rodzinami.</p>
+    <p>🍽️ Jedzenie i napoje będą zapewnione.</p>
+    <p>📍 Miejsce spotkania: Bregwerkstr. 5A, dziedziniec przed biurem kadr, naprzeciwko budynku pracowniczego.</p>
+    <p class="register">📝 Prosimy wpisać się na listę zgłoszeń najpóźniej do 21.08.2026.</p>
+  </div>
+  <h3>Jedzenie łączy kultury.</h3>
+  <p>Kto chce, może przynieść specjalność, sałatkę lub deser ze swojego kraju.</p>
+  <p class="optional">Nie jest to obowiązkowe – Wasza obecność jest najpiękniejszym prezentem.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="ro" class="card lang-section">
+  <div class="lang-title">🇷🇴 Română</div>
+  <h1>Petrecerea de vară 2026</h1>
+  <h2>Împreună. Colorați. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Sâmbătă, 19 septembrie 2026</p>
+    <p>🕒 Începere: ora 15:00</p>
+    <p>👨‍👩‍👧‍👦 Colegii împreună cu familiile lor sunt bineveniți.</p>
+    <p>🍽️ Mâncarea și băuturile sunt asigurate.</p>
+    <p>📍 Loc de întâlnire: Bregwerkstr. 5A, curtea din fața biroului de personal, vizavi de clădirea angajaților.</p>
+    <p class="register">📝 Vă rugăm să vă înscrieți pe lista de participare cel târziu până la 21.08.2026.</p>
+  </div>
+  <h3>Mâncarea unește culturile.</h3>
+  <p>Cine dorește poate aduce o specialitate, o salată sau un desert din țara sa.</p>
+  <p class="optional">Nu este obligatoriu – prezența voastră este cel mai frumos cadou.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="hu" class="card lang-section">
+  <div class="lang-title">🇭🇺 Magyar</div>
+  <h1>Nyári ünnepség 2026</h1>
+  <h2>Együtt. Színesen. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 2026. szeptember 19., szombat</p>
+    <p>🕒 Kezdés: 15:00</p>
+    <p>👨‍👩‍👧‍👦 A munkatársakat és családtagjaikat szeretettel várjuk.</p>
+    <p>🍽️ Ételről és italról gondoskodunk.</p>
+    <p>📍 Találkozóhely: Bregwerkstr. 5A, a személyzeti iroda előtti udvar, a dolgozói épülettel szemben.</p>
+    <p class="register">📝 Kérjük, legkésőbb 2026.08.21-ig írjátok fel magatokat a jelentkezési listára.</p>
+  </div>
+  <h3>Az étel összeköti a kultúrákat.</h3>
+  <p>Aki szeretne, hozhat a hazájára jellemző különlegességet, salátát vagy desszertet.</p>
+  <p class="optional">Nem kötelező – a részvételetek a legszebb ajándék.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="es" class="card lang-section">
+  <div class="lang-title">🇪🇸 Español</div>
+  <h1>Fiesta de verano 2026</h1>
+  <h2>Juntos. Diversos. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Sábado, 19 de septiembre de 2026</p>
+    <p>🕒 Inicio: 15:00 h</p>
+    <p>👨‍👩‍👧‍👦 Los compañeros y sus familias están invitados.</p>
+    <p>🍽️ Habrá comida y bebida para todos.</p>
+    <p>📍 Punto de encuentro: Bregwerkstr. 5A, patio frente a la oficina de personal, frente al edificio de empleados.</p>
+    <p class="register">📝 Por favor, inscríbanse en la lista antes del 21.08.2026 como fecha límite.</p>
+  </div>
+  <h3>La comida une culturas.</h3>
+  <p>Quien quiera puede traer una especialidad, una ensalada o un postre de su país.</p>
+  <p class="optional">No es obligatorio – vuestra presencia es el mejor regalo.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="it" class="card lang-section">
+  <div class="lang-title">🇮🇹 Italiano</div>
+  <h1>Festa d’estate 2026</h1>
+  <h2>Insieme. Variopinti. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Sabato 19 settembre 2026</p>
+    <p>🕒 Inizio: ore 15:00</p>
+    <p>👨‍👩‍👧‍👦 I colleghi e le loro famiglie sono i benvenuti.</p>
+    <p>🍽️ Cibo e bevande saranno offerti.</p>
+    <p>📍 Punto di ritrovo: Bregwerkstr. 5A, cortile davanti all’ufficio del personale, di fronte all’edificio dei dipendenti.</p>
+    <p class="register">📝 Vi preghiamo di iscrivervi nell’elenco entro e non oltre il 21.08.2026.</p>
+  </div>
+  <h3>Il cibo unisce le culture.</h3>
+  <p>Chi lo desidera può portare una specialità, un’insalata o un dolce del proprio Paese.</p>
+  <p class="optional">Non è obbligatorio – la vostra presenza è il regalo più bello.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="mk" class="card lang-section">
+  <div class="lang-title">🇲🇰 Македонски</div>
+  <h1>Летна прослава 2026</h1>
+  <h2>Заедно. Шарено. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Сабота, 19 септември 2026</p>
+    <p>🕒 Почеток: 15:00 часот</p>
+    <p>👨‍👩‍👧‍👦 Добредојдени се колегите и нивните семејства.</p>
+    <p>🍽️ Ќе бидат обезбедени храна и пијалаци.</p>
+    <p>📍 Место на собирање: Bregwerkstr. 5A, дворот пред кадровската служба, спроти зградата за вработени.</p>
+    <p class="register">📝 Ве молиме запишете се на списокот за пријавување најдоцна до 21.08.2026.</p>
+  </div>
+  <h3>Храната ги поврзува културите.</h3>
+  <p>Кој сака, може да донесе специјалитет, салата или десерт од својата земја.</p>
+  <p class="optional">Не е задолжително – вашето присуство е најубавиот подарок.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="kk" class="card lang-section">
+  <div class="lang-title">🇰🇿 Қазақша</div>
+  <h1>Жазғы мереке 2026</h1>
+  <h2>Бірге. Әртүрлі. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Сенбі, 19 қыркүйек 2026 жыл</p>
+    <p>🕒 Басталуы: 15:00</p>
+    <p>👨‍👩‍👧‍👦 Әріптестер мен олардың отбасылары шақырылады.</p>
+    <p>🍽️ Тағам мен сусындар дайын болады.</p>
+    <p>📍 Кездесу орны: Bregwerkstr. 5A, кадрлар кеңсесінің алдындағы аула, қызметкерлер ғимаратының қарсы беті.</p>
+    <p class="register">📝 Өтінеміз, 21.08.2026 дейін тіркелу тізіміне жазылыңыз.</p>
+  </div>
+  <h3>Тағам мәдениеттерді біріктіреді.</h3>
+  <p>Қаласаңыз, өз еліңіздің ұлттық тағамын, салатын немесе десертін алып келе аласыз.</p>
+  <p class="optional">Міндетті емес – сіздің қатысуыңыз біз үшін ең үлкен сыйлық.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="sr" class="card lang-section">
+  <div class="lang-title">🇷🇸 Srpski</div>
+  <h1>Letnja proslava 2026</h1>
+  <h2>Zajedno. Raznoliko. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Subota, 19. septembar 2026.</p>
+    <p>🕒 Početak: 15:00 časova</p>
+    <p>👨‍👩‍👧‍👦 Kolege sa porodicama su dobrodošli.</p>
+    <p>🍽️ Hrana i piće su obezbeđeni.</p>
+    <p>📍 Mesto okupljanja: Bregwerkstr. 5A, dvorište ispred kancelarije za ljudske resurse, preko puta zgrade za zaposlene.</p>
+    <p class="register">📝 Molimo vas da se najkasnije do 21.08.2026. upišete na listu za prijavu.</p>
+  </div>
+  <h3>Hrana povezuje kulture.</h3>
+  <p>Ko želi, može doneti specijalitet, salatu ili desert iz svoje zemlje.</p>
+  <p class="optional">Nije obavezno – vaše prisustvo je najlepši poklon.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+<section id="me" class="card lang-section">
+  <div class="lang-title">🇲🇪 Crnogorski</div>
+  <h1>Ljetnja proslava 2026</h1>
+  <h2>Zajedno. Raznoliko. Bregwerk.</h2>
+  <div class="info">
+    <p>📅 Subota, 19. septembar 2026.</p>
+    <p>🕒 Početak u 15:00 časova</p>
+    <p>👨‍👩‍👧‍👦 Kolege sa porodicama su dobrodošli.</p>
+    <p>🍽️ Hrana i piće su obezbijeđeni.</p>
+    <p>📍 Mjesto okupljanja: Bregwerkstr. 5A, dvorište ispred kancelarije za ljudske resurse, preko puta zgrade za zaposlene.</p>
+    <p class="register">📝 Molimo vas da se najkasnije do 21.08.2026. upišete na listu za prijavu.</p>
+  </div>
+  <h3>Hrana povezuje kulture.</h3>
+  <p>Ko želi, može donijeti specijalitet, salatu ili desert iz svoje zemlje.</p>
+  <p class="optional">Nije obavezno – vaše prisustvo je najljepši poklon.</p>
+  <button class="back" onclick="showMenu()">← Sprache / Language</button>
+</section>
+
+</div>
+<script>
+function showLang(code) {
+  document.getElementById('menu').style.display='none';
+  document.querySelectorAll('.lang-section').forEach(el => el.style.display='none');
+  document.getElementById(code).style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showMenu() {
+  document.querySelectorAll('.lang-section').forEach(el => el.style.display='none');
+  document.getElementById('menu').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
